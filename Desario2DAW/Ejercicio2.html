@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>orden</title>
+    <link href="css/Style.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+     <h1>Menú</h1>
+    
+        <form id="order-form"><br>
+            <h3>Selecciona un combo:</h3><br>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="combo" value="7.25" checked>
+                <label class="form-check-label">Super Combo ($7.25)</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="combo" value="5.75">
+                <label class="form-check-label">Combo Personal ($5.75)</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="combo" value="3.50">
+                <label class="form-check-label">Infantil ($3.50)</label>
+            </div><br>
+
+        
+            <h3>Ingredientes adicionales:</h3><br>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="ensalada" value="1.50">
+                <label class="form-check-label">Ensalada ($1.50)</label><br>
+                <input type="checkbox" class="form-check-input" id="ensalada" value="1.50">
+                <label class="form-check-label">Aguacate ($0.50)</label><br>
+                <input type="checkbox" class="form-check-input" id="ensalada" value="1.50">
+                <label class="form-check-label">Papitas ($1.00)</label><br>
+                <input type="checkbox" class="form-check-input" id="ensalada" value="1.50">
+                <label class="form-check-label">Fricoles charros ($1.50)</label><br>
+            </div>
+        
+            <br><h3>Total a pagar: <span id="total">0</span></h3>
+        
+            <textarea id="comments" class="form-control" placeholder="Ingresa tus comentarios o sugerencias"></textarea>
+        
+           <br> <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
